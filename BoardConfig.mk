@@ -40,6 +40,14 @@ TARGET_USES_UEFI := true
 
 # Crypto
 TARGET_HW_DISK_ENCRYPTION := true
+TW_INCLUDE_CRYPTO := true
+
+# A/B device flags
+TARGET_NO_KERNEL := false
+#TARGET_NO_RECOVERY := true
+#BOARD_USES_RECOVERY_AS_BOOT := true
+#BOARD_BUILD_SYSTEM_ROOT_IMAGE := true
+AB_OTA_UPDATER := true
 
 # Enable CPUSets
 ENABLE_CPUSETS := true
@@ -79,9 +87,7 @@ BOARD_HAS_NO_SELECT_BUTTON := true
 TARGET_COPY_OUT_VENDOR := vendor
 
 # TWRP Configuration
-AB_OTA_UPDATER := true
 TW_THEME := portrait_hdpi
-TW_INCLUDE_CRYPTO := true
 TW_MAX_BRIGHTNESS := 100
 TW_BRIGHTNESS_PATH := "/sys/class/leds/lcd-backlight/brightness"
 TW_EXCLUDE_SUPERSU := true
